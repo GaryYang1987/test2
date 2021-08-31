@@ -1,0 +1,26 @@
+//字體
+$font-noto: 'Noto Sans TC', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+//文字大小
+$font-size-base: 1rem; //16px
+
+$font-size-sm: $font-size-base * 0.875; //14px
+
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 1.75; //28px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base; //16px
+$span-font-size:$font-size-base * 2.25; //32px
+
+//文字顏色
+$color-primary:#AA0601;
+$color-primary-light: #AA06010D;
+$color-primary-dark:#650300;
+$color-secondary:#000000;
+$color-secondary-light:#555555;
+
+//連結顏色
+$linkColor-primary:#ffffff;
+

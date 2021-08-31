@@ -1,0 +1,508 @@
+
+.header{
+    background-color: $color-primary;
+    padding: 0 5%;
+    @include pad{
+        padding: 0;
+    }
+}
+.logo{
+    background: url(../images/logo.png) no-repeat center; 
+    background-size: contain;
+    width: 80px;
+    padding: 30px 0px;
+    @include pad{
+        width: 48px;
+        padding: 15px 0px;
+        margin: 0 auto;
+    }
+    
+}
+.headerBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include pad{
+        display: block;
+    }
+}
+
+.menu{
+    li{
+        padding: 0px 32px;
+    }
+    a{
+        color: $linkColor-primary;
+    }
+    & a:hover{
+        color: gold;
+    }
+    @include pad{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.menu__item{
+    @include pad{
+        width: 50%;
+        border: 1px solid #ffffff;
+        a{
+            padding: 8px;
+            text-align: center;
+        }
+    }
+    @include mobile{
+
+    }
+}
+.banner{
+   height: 840px;
+   background: url(../images/banner.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   &__solgan{
+       height: 100%;
+       span{
+           color: $color-primary-dark;
+           font-size: $span-font-size; 
+           @include pad{
+               font-size: $h5-font-size;
+           }
+           @include mobile{
+            font-size: $font-size-base;
+        }
+           }
+        
+        h2{
+            color: $color-primary-dark;
+            font-size: $h1-font-size;
+            font-weight: bold;
+            @include pad{
+                font-size: $h2-font-size;
+            }
+            @include mobile{
+                font-size: $h3-font-size;
+            }
+        }
+        
+    }
+    @include mobile{
+        height: 394px;
+    }
+}
+.specialized{
+    background-color: #FBF2F2;
+    padding: 60px 0px 80px;
+    color: $color-primary-dark;
+}
+.sectionTitle{
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $color-primary-dark;
+    @include pad{
+        font-size: $span-font-size;
+        margin-bottom: 32px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        margin-bottom: 20px;
+    }
+}
+.specialized__subject{
+    @include pad{
+        justify-content: space-around;
+    }
+}
+.specialized__subject__item{
+    text-align: center;
+    width: 22%;
+    &__img{
+        display: block;
+        margin: 0 auto;
+        width: 83px;
+        height: 83px;
+    }
+    &__title{
+        font-size: $h4-font-size;
+        font-weight: bold;
+    }
+    &__body{
+        text-align: left;
+        color: $color-secondary;
+    }
+}
+.specialized__subject__item{
+    @include pad{
+        width: 40%;
+        margin-bottom: 40px;
+        
+    }
+    @include mobile{
+        width: 75%;
+        margin-bottom: 40px;
+    }
+}
+.main__classic{
+    padding: 60px 0px 80px;
+    color: $color-primary-dark;
+    @include pad{
+        padding: 32px 0px;
+    }
+}
+.main__classic__item{
+    @include pad{
+        margin-bottom: 8px;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+.main__classic__item__body{
+        color: $color-primary;
+        font-size: $h2-font-size;
+        font-weight: bold;
+        margin: 0px 30px;
+}
+.main__classic__item__img{
+    width: 56%;
+    @include mobile{
+        display: none;
+     }
+}
+.main__classic__item__pc{
+    @include mobile{
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+.main__classic__item__bg1{
+    @include mobile{
+        background: url(../images/product-1.png) no-repeat center/cover;
+        height: 134px;
+    }
+}
+.main__classic__item__bg2{
+    @include mobile{
+        background: url(../images/product-2.png) no-repeat center/cover;
+        height: 134px;
+    }
+}
+.main__classic__item__bg3{
+    @include mobile{
+        background: url(../images/product-3.png) no-repeat center/cover;
+        height: 134px;
+    }
+}
+.f-style{
+    font-style: italic;
+    & span{
+        font-size: 40px;
+        margin-right: 10px;
+        } 
+    @include pad{
+        font-size: 28px;
+    }         
+}
+.design{
+    
+    background: url(../images/bg.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding-top: 60px;
+   padding-bottom: 80px;
+   @include pad{
+       padding-top: 40px;
+       padding-bottom: 56px;
+   }
+   @include mobile{
+       padding-top: 32px;
+       padding-bottom: 24px;
+   }
+}
+.sectionTitle-white{
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $linkColor-primary;
+    @include pad{
+        font-size: $span-font-size;
+        margin-bottom: 32px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.design__card__pic{
+    width: 48%;
+    @include pad{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+.designPic{
+    position: relative;
+    z-index: 1;
+    height: 455px;
+    @include pad{
+        height: 278px;
+    }
+    @include mobile{
+        height: 291px;
+    }
+}
+.designPic-left{
+    background: url(../images/product-8.png) no-repeat center/cover;
+}
+.designPic-right{
+    background: url(../images/product-9.png) no-repeat center/cover;
+}
+.designSubtitle{
+    font-size: 72px;
+    color: $color-primary;
+    z-index: 3;
+    font-weight: bold;
+    @include pad{
+        font-size: 32px;
+    }
+}
+.designPic{
+    &::after{
+    content: '';   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    opacity: 0.5;
+    z-index: 2;
+    }
+}
+.customRecommend{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+    @include mobile{
+        padding-top: 32px;
+    }
+}
+.customRecommend__list__item{
+    width: 23%;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0 2px 6px #00000029;
+    border-radius: 4px;
+        &__img{
+            width: 100%;
+            height: 256px;
+    }
+        &__body{
+            padding: 0px 16px;
+            height: 204px;
+        }
+        &__body__subTitle{
+            font-size: 14px;
+        }
+        &__body__content{
+            margin-bottom: auto;
+        }
+    @include pad{
+        width: 48%;
+        margin-bottom: 32px;
+    }
+    @include mobile{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+.customRecommend__list__item__body__date{
+    color: #707070;
+    font-size: 14px;
+}
+.contact{
+    background-color: #FBF2F2;
+    padding: 60px 0px 80px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+    @include mobile{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+}
+.sectionTitle-black{
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $color-secondary;
+    @include pad{
+        font-size: $span-font-size;
+    }
+}
+.contact__content{
+    width: 68%;
+    margin: 0 auto;
+    &__body{
+        font-size: $h5-font-size;
+        margin-bottom: 20px;
+        @include pad{
+            font-size: $font-size-base;
+            margin-bottom: 8px;
+        }
+    
+    }
+    @include pad{
+        width: 100%;
+    }
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 1.3rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    background-color: transparent;
+}
+.contactUs__content__form__submit {
+    width: 47%;
+    display: block;
+    margin: 40px auto 0;
+    padding: 16px 0px;
+    color: #FFFFFF;
+    background: #AA0601;
+    cursor: pointer;
+}
+.footer{
+    background-color: $color-primary;
+    padding: 24px 0px 40px;
+    @include pad{
+        padding: 28px 0px 32px;
+    }
+    @include mobile{
+        padding: 24px 0px;
+    }
+}
+.footer__menu{
+    margin-bottom: 32px;
+    position: relative;
+    @include pad{
+        margin-bottom: 24px;
+    }
+    @include mobile{
+        margin-bottom: 16px;
+    }
+    &::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    bottom: 0;
+    }
+}
+.footer__menu__nav{
+    width: 60%;
+    @include pad{
+        width: 65%;
+    }
+}
+.footer__menu__item{
+    margin-bottom: 16px;
+    @include pad{
+        margin-bottom: 8px;
+        display: none;
+    }
+}
+.footer__menu__item a{
+    color: $linkColor-primary;
+    font-size: $h5-font-size;
+    padding: 20px;
+    &:hover{
+        color: gold;
+    }
+    @include pad{
+        padding: 10px;
+        font-size: $font-size-base;
+    }
+}
+.footer__menu__content{
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 16px;
+    @include pad{
+        padding-bottom: 14px;
+    }
+    @include mobile{
+        padding-bottom: 21px;
+    }
+}
+.footer__menu__content__link{
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 8px 0px;
+    color: $linkColor-primary;
+    @include pad{
+        font-size: $font-size-base;
+        padding: 6px 0;
+    @include mobile{
+        padding: 3px 0;
+    }
+    }
+    &__pic{
+        margin-right: 20px;
+        width: 48px;
+    @include pad{
+        margin-right: 10px;
+        width: 19px;
+    }
+    }
+    
+} 
+.footer__menu__social__link{
+    padding: 10px 20px;
+    @include pad{
+        padding: 10px 10px;
+    }
+}
+.footer__menu__social__icon{
+    @include pad{
+        width: 24px;
+    }
+}
+.copyright{
+    color: $linkColor-primary;
+    @include pad{
+        display: block;
+    }
+    &__text{
+        @include pad{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    }
+}   
+.privacyItem{
+    @include pad{
+        margin-bottom: 8px;
+    }
+}
+.privacyMenu{
+    width: 17%;
+    @include pad{
+        width: 25%;
+        display: block;
+    }
+}
+.privacyLink{
+    color: $linkColor-primary;
+    font-size: 14px;
+}
